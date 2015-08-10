@@ -1,0 +1,20 @@
+
+@import 'colors';
+@import 'sizes';
+
+div.warning {
+  background-color: $color-warning;
+  border-radius: $unit;
+  border: $unit * 0.5 solid white;
+
+  color: white;
+  font-size: $unit * 2;
+  
+  position: absolute;
+  top: $unit;
+  left: 50%;
+
+  padding: $unit * 2;
+  
+  transform: translateX(-50%);
+}

@@ -1,0 +1,109 @@
+
+@import 'colors';
+@import 'sizes';
+@import 'anim';
+
+body > header {
+  border-bottom: 2px solid $color-grey;
+  
+  font-size: $unit * 2;
+  color: $color-light-grey;
+  
+  padding: 0 $unit * 4;
+
+  h1 {
+    color: $color-grey;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    display: inline-block;
+    margin-right: $unit * 4;
+    padding: $unit * 2 0;
+  }
+
+  nav {
+    display: inline-block;
+  }
+
+  ul {
+    
+    display: inline-block;
+
+    li {
+      text-transform: uppercase;
+      
+      list-style-type: none;
+      display: inline-block;
+      
+      height: $unit * 2;
+
+      padding: 0 $unit;
+      
+      a {
+        display: block;
+        position: relative;
+        
+        padding: $unit * 2 $unit;
+      }
+      
+    }
+
+  }
+  
+}
+
+main > nav.secondary{
+  
+  background-color: $color-grey;
+
+  font-size: $unit * 1.75;
+  color: #fff;
+  
+  padding: 0 $unit * 2;
+  margin-top: -2px;
+
+  ul {
+    
+    display: inline-block;
+
+    li {
+      text-transform: uppercase;
+      
+      list-style-type: none;
+      display: inline-block;
+      
+      padding: 0 $unit;
+
+      height: $unit * 4.75;
+      
+      a {
+        display: block;
+        position: relative;
+        
+        padding: $unit $unit;
+        padding-bottom: $unit * 1.25;
+
+        border-bottom: 0 solid white;
+
+        transition: border-bottom $anim ease, padding-bottom $anim ease, color $anim ease;
+        
+        color: #ddd;
+
+        &.obsolete {
+          color: #999;
+        }
+
+        &.active {
+          border-bottom: $unit * 0.5 solid white;
+
+          color: white;
+          padding-bottom: $unit * 0.75;
+        }
+
+      }
+      
+    }
+
+  }
+
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+  @@include('template/head.html', {"title": "SpaceX Vehicles", "path": "."})
+  
+  <body id="page-vehicles">
+    @@include('template/header.html')
+    
+    <main>
+      <nav class="secondary">
+        <ul>
+        </ul>
+      </nav>
+
+      <div class="vehicles">
+      </div>
+
+      <div id="javascript-disabled-warning" class="warning">
+        <p>This website is interactive, so you'll need to enable
+          JavaScript. Warning: this page is tracked with Google Analytics.</p>
+      </div>
+
+      <script>$("#javascript-disabled-warning").remove()</script>
+
+      <div id="vehicle-canvas">
+      </div>
+      
+    </main>
+    
+    @@include('template/footer.html')
+
+  </body>
+</html>

@@ -1,0 +1,139 @@
+{
+  "name": "Falcon 9 v1.1",
+  "obsolete": false,
+  "size": [320, 1600],
+  "stages": [
+    
+    {
+      "name": "Booster stage",
+      "components": [
+        
+        {
+          "name": "Booster",
+          "purpose": "Carries the vehicle through most of the atmosphere and into space",
+
+          "annotation": true,
+          "image_name": "booster"
+          
+        },
+        
+        {
+          "name": "Interstage",
+          "purpose": "Contains the upper stage engine bell and flight computers for the booster stage",
+          
+          "annotation": true,
+          "image_name": "booster-interstage",
+
+          "position": [0, 615]
+          
+        },
+        
+        {
+          "name": "RCS",
+          "purpose": "Reorients the booster stage in the vacuum of space",
+          
+          "annotation": true,
+          "image_name": "booster-rcs",
+
+          "annotation_type": "arrow",
+          "position": [56, 578]
+          
+        },
+        
+        {
+          "name": "Stage Sep",
+          "purpose": "System that separates and pushes the first and second stages apart from each other",
+          
+          "minor": true,
+          
+          "annotation": true,
+          "image_name": "booster-stage-separation",
+
+          "annotation_type": "arrow",
+          "position": [56, 550]
+          
+        },
+        
+        {
+          "name": "Two Fueling ports",
+          "purpose": "Connects the fuel and electronics of the booster stage to the launch pad",
+          
+          "minor": true,
+          
+          "annotation": true,
+          "image_name": "booster-fueling-port",
+
+          "annotation_type": "arrow",
+          "position": [56, 1510]
+          
+        },
+        
+        {
+          "name": "Octaweb",
+          "purpose": "Structure and layout of the 9 Merlin 1D engines",
+          
+          "annotation": true,
+          "image_name": "booster-octaweb",
+
+          "annotation_type": "dot",
+          "position": [30, 1540]
+          
+        },
+        
+        {
+          "name": "Grid Fins",
+          "purpose": "Control the booster during hypersonic flight through the atmosphere",
+
+          "state": "closed",
+
+          "state_cycle": ["closed", "open"],
+
+          "states": {
+
+            "closed": {
+              "annotation": true,
+              "image_name": "booster-fins-closed",
+              "position": [40, 670]
+            },
+
+            "open": {
+              "annotation": true,
+              "image_name": "booster-fins-open",
+              "position": [40, 670]
+            }
+
+          }
+          
+        },
+        
+        {
+          "name": "Landing Legs",
+          "purpose": "Deploy moments before touchdown",
+
+          "state": "closed",
+          
+          "state_cycle": ["closed", "open"],
+
+          "position": [32, 1420],
+          
+          "states": {
+            
+            "closed": {
+              "annotation": true,
+              "image_name": "booster-legs-closed"
+            },
+            
+            "open": {
+              "annotation": true,
+              "image_name": "booster-legs-open"
+            }
+            
+          }
+          
+        }
+        
+      ]
+      
+    }
+  ]
+}

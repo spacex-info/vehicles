@@ -1,0 +1,32 @@
+
+@import 'colors';
+@import 'sizes';
+
+body > footer {
+  font-size: $unit * 1.5;
+  
+  color: $color-light-grey;
+  
+  padding: $unit * 2 $unit * 4;
+  margin-top: $unit * 2;
+
+  ul {
+    
+    li {
+      list-style-type: none;
+      display: inline;
+    }
+
+    .copyright {
+      margin-right: $unit * 2;
+    }
+
+    .disclaimer {
+      color: $color-grey;
+      
+      float: right;
+    }
+    
+  }
+  
+}

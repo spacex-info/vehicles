@@ -1,0 +1,30 @@
+
+@import 'sass-flexbox';
+
+@import 'reset';
+
+@import 'warning';
+
+@import 'header';
+
+@import 'vehicle';
+
+@import 'footer';
+
+html {
+  font-family: Oswald, Arial, sans-serif;
+  
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+
+  @extend %display-flex;
+  @extend %flex-direction-column;
+
+  main {
+    @include flex(1, 1, 1);
+  }
+  
+}
